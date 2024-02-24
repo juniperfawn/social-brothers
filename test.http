@@ -1,0 +1,3 @@
+GET https://frontend-case-api.sbdev.nl/api/posts?page=1&perPage=10&sortBy=title&sortDirection=asc&searchPhrase=test
+
+Authorization: "pj11daaQRz7zUIH56B9Z"

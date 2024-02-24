@@ -2,32 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.formLabel {
+  padding-top: 24px;
+  font-size: 12px;
+  color: #404040;
+  padding-bottom: 8px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.formInput {
+  color: #c5c5c5;
+  font-size: 12px;
+  font-style: italic;
+  padding: 12px 16px;
+  background-color: #fafafa;
+  width: 100%;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.underline {
+  position: relative;
+  text-decoration: none;
+  padding: 0 10px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.underline:after {
+  content: "";
+  position: absolute;
+  background-color: #f27623;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -8px;
+}
+
+.underline:hover:after {
+  width: 100%;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
