@@ -26,14 +26,14 @@ function BlogLibrary() {
       </div>
       <div className="flex justify-center align-middle px-3 md:px-8 lg:max-w-[1116px] lg:max-h-[507px]">
         <div className="grid grid-cols-1 gap-3 sm:grid sm:grid-cols-2 sm:gap-6 lg:grid-cols-4 lg:gap-6">
+          {/* <Card />
           <Card />
           <Card />
           <Card />
           <Card />
           <Card />
           <Card />
-          <Card />
-          <Card />
+          <Card /> */}
         </div>
       </div>
       <div className="flex justify-center align-middle gap-4 text-xs py-6">
