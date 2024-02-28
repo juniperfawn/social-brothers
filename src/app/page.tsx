@@ -36,9 +36,9 @@ export default function Home() {
   }, []); // Empty dependency array means this effect runs once on mount
 
   console.log("THIS IS SET THE BLOG POST DATA");
-   console.log(blogPosts);
-   console.log("Done");
-   
+  console.log(blogPosts);
+  console.log("Done");
+
   return (
     <main className="bg-customGray">
       <NavBar />
@@ -47,7 +47,7 @@ export default function Home() {
           <BlogForm />
         </div>
         <div className="sm:flex justify-center align-middle">
-          {blogPosts && <BlogPreview posts={blogPosts} />}
+          <BlogPreview posts={blogPosts} />
         </div>
       </div>
       <Footer />
