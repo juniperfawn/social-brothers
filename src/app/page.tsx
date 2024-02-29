@@ -33,11 +33,9 @@ export default function Home() {
     }
 
     fetchBlogPosts();
-  }, []); // Empty dependency array means this effect runs once on mount
+  }, []);
 
-  console.log("THIS IS SET THE BLOG POST DATA");
   console.log(blogPosts);
-  console.log("Done");
 
   return (
     <main className="bg-customGray">

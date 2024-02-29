@@ -8,8 +8,8 @@ function BlogForm() {
         <h2 className="text-lg font-bold sm:text-2xl">
           Plaats een blog bericht
         </h2>
-        <form className="">
-          <div className="pt-6">
+        <form>
+          <div className="pt-6 lg:pt-2">
             <label className="formLabel">Berichtnaam*</label>
             <br />
             <input
@@ -25,14 +25,14 @@ function BlogForm() {
           <div className="pt-6">
             <label className="formLabel">Categorie*</label>
             <br />
-            <input
-              type="text"
-              id="categorie"
-              name="categorie"
-              placeholder="Geen titel"
+            <select
               className="formInput focus:outline-none focus:ring-2 focus:ring-customOrange"
-              required
-            />
+              id="pet-select"
+            >
+              <option value="">Geen titel</option>
+              <option value="one">option one</option>
+              <option value="two">option two</option>
+            </select>
             <br />
           </div>
           <div className="pt-6">
@@ -43,7 +43,7 @@ function BlogForm() {
               id="myfile"
               name="myfile"
               required
-              className="w-full"
+              className="w-full formInput"
             />
             <br />
           </div>
